@@ -6,6 +6,7 @@ var app = require('http').createServer(),
 var port = process.argv[2];
 app.listen(port);
 
+console.log(port)
 io.configure( function() {
     io.set('close timeout', 60*60*24); // 24h time out
 });

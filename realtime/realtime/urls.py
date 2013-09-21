@@ -7,6 +7,7 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'realtime.views.home', name='home'),
+	url(r'^' , include('apps.main.urls')) , # va a jalar las urls de nuestra aplicacion 
     # url(r'^realtime/', include('realtime.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

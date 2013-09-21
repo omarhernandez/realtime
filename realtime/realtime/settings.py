@@ -121,6 +121,7 @@ WSGI_APPLICATION = 'realtime.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    os.path.join(os.path.dirname(__file__),'templates'),
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
@@ -138,12 +139,9 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.humanize',
     'core',
-    'debug_toolbar',
+	'main',
 )
 
-LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_URL = '/logout/'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -175,8 +173,3 @@ LOGGING = {
 }
 
 
-#Django-debug-toolbar
-INTERNAL_IPS = ('127.0.0.1',)
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False,
-}
