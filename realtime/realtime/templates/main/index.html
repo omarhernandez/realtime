@@ -1,0 +1,9 @@
+<script src="http://{{ NODE_JS_SERVER }}/socket.io/socket.io.js"></script>
+<script>
+    var socket = io.connect('http://{{ NODE_JS_SERVER }}');
+    socket.on('channel_comments_{{ object_content_type_id }}_{{ object.id }}',
+        function (data) {
+            console.log(data);
+            // add comment to list
+        });
+</script>
