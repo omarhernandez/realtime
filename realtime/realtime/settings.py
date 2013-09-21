@@ -110,7 +110,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
       'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
@@ -138,8 +137,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'django.contrib.humanize',
-    'core',
-	'main',
+    'apps.core',
+	'apps.main',
 )
 
 
