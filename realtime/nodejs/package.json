@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "express": "*", 
+	
+        "redis": "*", 
+        "socket.io": "*"
+    }, 
+    "engines": {
+        "node": "*"
+    }, 
+    "name": "RealtimeFeed", 
+    "private": true, 
+    "version": "0.0.1"
+}
